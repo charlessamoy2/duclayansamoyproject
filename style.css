@@ -7,12 +7,22 @@
     box-sizing: border-box;
 }
 
-#main{
+html {
+    background-image: linear-gradient(black,rgb(48, 48, 48));
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height:100%;
+    width:100%
+}
+
+/*#main{
     background-image: linear-gradient(black,rgb(48, 48, 48));
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-}
+}*/
+
+/*Start: Navigation Bar*/
 nav{
     overflow: hidden;
     width: 100%;
@@ -36,14 +46,51 @@ nav a {
 a:hover{
     color:grey;
 }
+/*End: Navigation Bar*/
 
+/*Start: Body*/
 #body{
     display: flex;
+    flex-wrap: nowrap;
     width: 100%;
-    height: auto;
+    height: fit-content;
+    background-color: rgb(22, 22, 22);
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: left;
+    color:rgb(192, 189, 189)
 }
 
+#body .bodyTitle{
+    font-size: 1.5rem;   
+}
+
+#body .bodyCaption{
+    font-size: 0.75rem;
+}
 #about{
     width:75%;
     margin: auto;
 }
+/*End:Body
+
+/*Start of productName*/
+#title{
+    color:gray;
+    padding:150px;
+    text-align: left;
+    margin-left: 50px
+}
+
+#title .introLine{
+    font-size: 1.2rem;
+}
+#title .productName{
+    font-size: 4.5rem;
+    font-weight: 1000;
+}
+#title .headphone{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+/*End of productName*
