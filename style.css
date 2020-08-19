@@ -33,6 +33,12 @@ figcaption {
     margin-bottom: 25px;
 }
 
+video {
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
 /*Start: Navigation Bar*/
 nav{
     overflow: hidden;
@@ -44,8 +50,6 @@ nav{
     opacity: 90%;
     margin: auto;
     vertical-align: middle;
-    /*position: -webkit-sticky; /* Safari */
-    /*position: sticky;*/
     position: fixed;
     background-color: rgba(0, 0, 0, 0.575);
     z-index: 10;
@@ -62,6 +66,7 @@ nav>a {
     border-bottom: solid 2px rgb(202, 111, 0);
     display: inline;
     padding-bottom: 10px;
+    justify-content: space-evenly;
 }
 
 #image img {
@@ -154,6 +159,7 @@ section{
 
 #feature{
     padding-top: 11%;
+    height: auto;
 }
 
 #feature .bodyTitle{
@@ -166,11 +172,16 @@ section{
 }
 
 #bodyFeature {
-    width: 90%;
+    width: auto;
+    max-width: 90%;
     margin: auto;
     margin-top: 20px;
-    height: 800px;
+    height: fit-content;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 #bodyFeature1 {
@@ -218,7 +229,7 @@ section{
     margin-left: 1%;
     background-color: rgba(65, 65, 65, 0.267);
     display: column;
-    padding: 3%;
+    padding: 2%;
 }
 
 #bodyFeature3 img{
