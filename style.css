@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 html {
@@ -15,17 +16,24 @@ html {
     width:100%
 }
 
+figcaption {
+    color: rgb(170, 170, 170);
+    font-size: 80%;
+    margin-bottom: 25px;
+}
+
 /*Start: Navigation Bar*/
 nav{
     overflow: hidden;
     width: 90%;
     height: auto;
-    padding: 50px;
+    padding: 35px;
     opacity: 90%;
     margin: auto;
     vertical-align: middle;
     position: -webkit-sticky; /* Safari */
     position: sticky;
+    z-index: 10;
     top: 0;
 }
 
@@ -56,8 +64,8 @@ a:hover{
 #title{
     /*color:rgb(165, 165, 165);*/
     color:white;
-    padding-top:50px;
-    padding-bottom: 175px;
+    padding-top:125px;
+    padding-bottom: 250px;
     text-align: left;
     margin: auto;
     width: 95%;
@@ -105,13 +113,14 @@ section{
     width: 100%;
     height: 980px;
     text-align: center;
-    color:rgb(192, 189, 189);
+    color:white;
     margin: auto;
     padding: 30px;
 }
 
 .bodyTitle{
     font-size: 2.0rem;
+    font-weight: bold;
     text-align: center; 
 }
 
@@ -121,6 +130,7 @@ section{
     width: 50%;
     margin: auto;
     padding-top: 2%;
+    justify-content: center;
 }
 #about{
     padding-top: 5%;
@@ -130,17 +140,161 @@ section{
     padding-top: 5%;
 }
 
-#price{
-    padding-top: 5%;
+#feature .bodyTitle{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    font-size: 1.25rem;
+    border-bottom: solid 2px white;
+    padding-bottom: 25px;
 }
 
-#contact{
-    padding-top: 5%;
+#bodyFeature {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    height: 800px;
+    display: flex;
 }
+
+#bodyFeature1 {
+    width: 33%;
+    margin-right: 1%;
+    padding: 2%;
+    background-color: rgba(65, 65, 65, 0.267);
+    display: column;
+}
+
+.items {
+    padding: 4%;
+    margin: auto;
+    width: 100%;
+    border-bottom: solid 2px grey;
+}
+
+.items p{
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+.items:last-child{
+    border-bottom: none;
+}
+
+#bodyFeature2 {
+    text-align: left;
+    padding: 4%;
+    width: 33%;
+    background-color: rgba(65, 65, 65, 0.267);
+}
+
+#bodyFeature2 h2{
+    font-size: 95%;
+}
+
+#bodyFeature2 p{
+    font-size: 90%;
+    margin-bottom: 20px;
+}
+
+#bodyFeature3 {
+    width: 33%;
+    margin-left: 1%;
+    background-color: rgba(65, 65, 65, 0.267);
+    display: column;
+    padding: 3%;
+}
+
+#bodyFeature3 img{
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+#review{
+    width: 90%;
+    padding-top: 5%;
+    height: auto;
+}
+
+#review .bodyTitle{
+    margin: auto;
+    text-align: left;
+    font-size: 1.25rem;
+    border-bottom: solid 2px white;
+    padding-bottom: 25px;
+}
+
+.reviews {
+    margin: auto;
+    width: 40%;
+    height: auto;
+    background-color: rgba(65, 65, 65, 0.267);
+    padding: 2%;
+}
+
+.star img{
+    width: 25px;
+    height: auto;
+}
+
+.review-bars{
+    padding: 8% 0%;
+}
+
+ul li .name {
+    width: 100%;
+}
+
+ul li .review-bar {
+    width: 60%;
+    margin: auto;
+    height: 5px;
+    background: black;
+    position: relative;
+}
+
+.review-bars ul li {
+    margin:30px;
+}
+
+ul li .review-bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: orange;
+}
+
+
 /*End:Body
 
 /* Start product-title animation*/
+.introLine{
+    animation: text 3s 1;
+}
+#product-img{
+    animation: 6s reveal;
+    animation-fill-mode: forwards; 
+  }
+  
 
-#product-title .introLine{
+@keyframes reveal{
+    0%{
+        opacity:0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@keyframes text{
+    0%{
+        color:black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing:2px;
+        margin-bottom:-40px;
+    }
 }
 /* End Title Text Animation*/
