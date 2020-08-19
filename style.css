@@ -18,14 +18,18 @@ html {
 /*Start: Navigation Bar*/
 nav{
     overflow: hidden;
+    width: 90%;
     height: auto;
     padding: 50px;
     opacity: 90%;
     margin: auto;
     vertical-align: middle;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 
-nav a {
+nav>a {
     float: right;
     text-align: center;
     margin-left: 50px;
@@ -36,10 +40,10 @@ nav a {
     padding-bottom: 10px;
 }
 
-nav>img {
+#image img {
     width: 200px;
+    float: left;
     height: auto;
-
     color: white;
 }
 
@@ -97,28 +101,46 @@ a:hover{
 /*End of productName*
 
 /*Start: Body*/
-#body{
-    display: flex;
-    flex-flow: space-between nowrap;
+section{
     width: 100%;
-    height: fit-content;
-    background-color: rgb(31, 31, 31);
-    background-repeat: no-repeat;
-    background-size:cover;
-    text-align: left;
+    height: 980px;
+    text-align: center;
     color:rgb(192, 189, 189);
+    margin: auto;
     padding: 30px;
 }
 
-#body .bodyTitle{
-    font-size: 1.5rem;   
+.bodyTitle{
+    font-size: 2.0rem;
+    text-align: center; 
 }
 
-#body .bodyCaption{
-    font-size: 0.75rem;
+.bodyCaption{
+    text-align: center;
+    font-size: 1.0rem;
+    width: 50%;
+    margin: auto;
+    padding-top: 2%;
 }
 #about{
-    width:75%;
-    margin: auto;
+    padding-top: 5%;
+}
+
+#feature{
+    padding-top: 5%;
+}
+
+#price{
+    padding-top: 5%;
+}
+
+#contact{
+    padding-top: 5%;
 }
 /*End:Body
+
+/* Start product-title animation*/
+
+#product-title .introLine{
+}
+/* End Title Text Animation*/

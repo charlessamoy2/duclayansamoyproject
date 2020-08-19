@@ -14,7 +14,11 @@
 <body>
     <div id="main">
         <nav>
-            <img src="images/sony.png" alt="sony logo">
+            <div id = "image">
+                <a href="#main">
+                    <img src="images/sony.png" alt="sony logo">
+                </a>
+            </div>
             <a href="#contact">Contact Us</a>
             <a href="#price">Pricing</a>
             <a href="#feature">Features</a>
@@ -33,24 +37,34 @@
             </div>
         </div>
 
-        <div id="body">
-            <div id="about">
-                <h1 class="bodyTitle"> About </h1>
-                <p class="bodyCaption"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ea! </p>              
-            </div>
-            <div id="feature">
+        <section id="about">
+            <div>
+                <h1 class="bodyTitle"> Experience the next level of silence </h1>
+                <p class="bodyCaption"> See what happens when it's just you and your music, with noise canceling that cuts more outside sound than ever before. And experience how smart headphones can be with advanced noise cancelling technology such as Adaptive Sound Control, and the convenience of smart features including Quick Attention, Voice Assistant compatibility and touch control. </p>   
+                <video width="1080" height="720" controls autoplay>
+                        <source src="images/sonyvideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+            </div>  
+        </section>
+        <section id="feature">
+            <div>
                 <h1 class="bodyTitle"> Feature </h1>
                 <p class="bodyCaption"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ea! </p> 
             </div>
-            <div id="price">
+        </section>
+        <section id="price">
+            <div>
                 <h1 class="bodyTitle"> Price </h1>
                 <p class="bodyCaption"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ea! </p> 
             </div>
-            <div id="contact">
+        </section>
+        <section id="contact">
+            <div>
                 <h1 class="bodyTitle"> Contact </h1>
                 <p class="bodyCaption"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, ea! </p> 
             </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>
