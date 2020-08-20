@@ -213,14 +213,16 @@ section{
     padding: 4%;
     width: 33%;
     background-color: rgba(65, 65, 65, 0.267);
+    overflow: auto;
 }
 
 #bodyFeature2 h2{
-    font-size: 95%;
+    font-size: 0.9rem;
 }
 
 #bodyFeature2 p{
-    font-size: 90%;
+    width: 90%;
+    font-size: 0.7rem;
     margin-bottom: 20px;
 }
 
@@ -229,10 +231,13 @@ section{
     margin-left: 1%;
     background-color: rgba(65, 65, 65, 0.267);
     display: column;
-    padding: 2%;
+    padding: 1%;
 }
 
 #bodyFeature3 img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
     padding-top: 5%;
     padding-bottom: 1%;
 }
