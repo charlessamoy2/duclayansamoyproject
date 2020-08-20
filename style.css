@@ -59,8 +59,8 @@ nav{
 nav>a {
     float: right;
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     color: white;
     text-decoration: none;
     border-bottom: solid 2px rgb(202, 111, 0);
@@ -94,7 +94,7 @@ a:hover{
 }
 
 #title #product-img {
-    width: 50%;
+    width: 90%;
 }
 
 #title #product-title {
